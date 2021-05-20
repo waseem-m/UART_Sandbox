@@ -7,3 +7,8 @@ SerialPort.cpp: Impelementation of the library<br />
 Arduino/Arduino/sketch_may18a.ino: Arduino code for LED using NeoPixel library<br />
 Arduino/Arduino/sketch_may18b.ino: Arduino code for LED using FastLED library<br />
 Arduino/Arduino/sketch_may18c.ino: Arduino code for message echo<br />
+
+
+Note:<br />
+We also tried SerialClass.h library: https://playground.arduino.cc/Interfacing/CPPWindows/<br />
+Same problem.
