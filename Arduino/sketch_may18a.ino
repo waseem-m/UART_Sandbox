@@ -50,15 +50,15 @@ void loop() {
   if(Serial.available() > 0){
     String info;
     info = Serial.readStringUntil('\n');
-    if(info.equals("1")){
+    if(info.equals("block1")){
       colorWipe(strip.Color(255,   0,   0), 0,0); // green
       //Serial.println("strip LED is green");
     }
-    else if(info.equals("2")){
+    else if(info.equals("block2")){
       colorWipe(strip.Color(0,   255,   0), 0,3); // Red
       //Serial.println("strip LED is red");
     }
-    else if(info.equals("3")){
+    else if(info.equals("block3")){
       colorWipe(strip.Color(0,   0,  255), 0,6); // Blue
       //Serial.println("strip LED is blue");
     }
