@@ -71,11 +71,11 @@ int main() {
                 delete [] charArray;
             }
             Sleep(1000);
-            }
-
         }
 
     }
+
+}
 
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
