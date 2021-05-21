@@ -38,9 +38,9 @@ int main() {
                 charArray[command.size()]= '\n';
 
                 arduino.writeSerialPort(charArray,MAX_DATA_LENGTH);
-                arduino.readSerialPort(output,MAX_DATA_LENGTH);
+                //arduino.readSerialPort(output,MAX_DATA_LENGTH);
 
-                cout<<output;
+                //cout<<output;
 
                 delete [] charArray;
             }
@@ -51,9 +51,9 @@ int main() {
                 charArray[command.size()]= '\n';
 
                 arduino.writeSerialPort(charArray,MAX_DATA_LENGTH);
-                arduino.readSerialPort(output,MAX_DATA_LENGTH);
+                //arduino.readSerialPort(output,MAX_DATA_LENGTH);
 
-                cout<<output;
+                //cout<<output;
 
                 delete [] charArray;
             }
@@ -64,9 +64,9 @@ int main() {
                 charArray[command.size()]= '\n';
 
                 arduino.writeSerialPort(charArray,MAX_DATA_LENGTH);
-                arduino.readSerialPort(output,MAX_DATA_LENGTH);
+                //arduino.readSerialPort(output,MAX_DATA_LENGTH);
 
-                cout<<output;
+                //cout<<output;
 
                 delete [] charArray;
             }
