@@ -10,9 +10,9 @@
 // How many NeoPixels are attached to the Arduino?
 #define LED_COUNT 29
 
-const byte numChars = 32;
+/*const byte numChars = 32;
 char receivedChars[numChars];
-boolean newData = false;
+boolean newData = false;*/
 
 // Declare our NeoPixel strip object:
 Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
@@ -44,13 +44,13 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  recvWithStartEndMarkers();
-  showNewData();
-  /*
+  /*recvWithStartEndMarkers();
+  showNewData();*/
+  
   if(Serial.available() > 0){
     String info;
     info = Serial.readStringUntil('\n');
-    if(info.equals("block1")){
+    if(info.equals("1")){
       colorWipe(strip.Color(255,   0,   0), 0,0); // green
       //Serial.println("strip LED is green");
     }
@@ -68,10 +68,10 @@ void loop() {
       //Serial.println("strip LED turned off");
     }
         
-  }*/
+  }
 }
 
-void recvWithStartEndMarkers() {
+/*void recvWithStartEndMarkers() {
     static boolean recvInProgress = false;
     static byte ndx = 0;
     char startMarker = '<';
@@ -109,7 +109,7 @@ void showNewData() {
         Serial.println(receivedChars);
         newData = false;
     }
-}
+}*/
 
 void colorWipe(uint32_t color, int wait,int offset) {
   strip.clear();
